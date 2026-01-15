@@ -1,0 +1,69 @@
+# ============================================================================
+# Crypto Trading Bot - Git Ignore File
+# ============================================================================
+
+# R History and Session Data
+.Rhistory
+.RData
+.Rproj.user
+.Ruserdata
+*.Rproj
+
+# Data files (exclude from git - can be large)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Log files
+logs/*
+*.log
+!logs/.gitkeep
+
+# Credentials and API keys (IMPORTANT: never commit these!)
+config/credentials.R
+config/api_keys.R
+*.key
+*.secret
+
+# Results and outputs
+results/*
+!results/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE specific
+.vscode/
+.idea/
+*.sublime-*
+
+# Python cache (if using Python tools)
+__pycache__/
+*.pyc
+*.pyo
+
+# Node modules (if using any JS tools)
+node_modules/
+
+# Package management
+packrat/
+renv/
+
+# Compiled files
+*.o
+*.so
+*.dll
+
+# Backup files
+*.bak
+*.backup
