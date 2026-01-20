@@ -138,10 +138,12 @@ LOG_TO_FILE <- TRUE
 FEATURES <- list(
   enable_real_time_data = TRUE,
   enable_historical_data = TRUE,
-  enable_technical_indicators = FALSE,  # Will enable in Priority 2
-  enable_backtesting = FALSE,           # Will enable in Priority 2
-  enable_paper_trading = FALSE,         # Will enable later
-  enable_live_trading = FALSE           # Will enable much later
+  enable_technical_indicators = TRUE,   # Priority 2 ✓
+  enable_backtesting = TRUE,            # Priority 2 ✓
+  enable_risk_management = TRUE,        # Priority 3 ✓
+  enable_paper_trading = TRUE,          # Priority 3 ✓
+  enable_visualization = TRUE,          # Priority 3 ✓
+  enable_live_trading = FALSE           # Future
 )
 
 # ============================================================================
