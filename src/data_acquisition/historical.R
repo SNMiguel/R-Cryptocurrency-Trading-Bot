@@ -245,7 +245,7 @@ download_historical_data <- function(cryptos = CRYPTOCURRENCIES,
       all_data[[crypto]] <- data
       
       # Save data
-      data_dir <- file.path(dirname(dirname(dirname(getwd()))), "data", "raw")
+      data_dir <- RAW_DATA_DIR
       filename <- paste0(crypto, "_", interval, "_", days, "days_", 
                         format(Sys.Date(), "%Y%m%d"))
       

@@ -11,12 +11,12 @@
 API_BASE_URL <- "https://min-api.cryptocompare.com"
 
 API_ENDPOINTS <- list(
-  price = paste0(API_BASE_URL, "/price"),
-  price_multi = paste0(API_BASE_URL, "/pricemulti"),
-  price_multi_full = paste0(API_BASE_URL, "/pricemultifull"),
-  historical_minute = paste0(API_BASE_URL, "/v2/histominute"),
-  historical_hour = paste0(API_BASE_URL, "/v2/histohour"),
-  historical_day = paste0(API_BASE_URL, "/v2/histoday")
+  price = paste0(API_BASE_URL, "/data/price"),
+  price_multi = paste0(API_BASE_URL, "/data/pricemulti"),
+  price_multi_full = paste0(API_BASE_URL, "/data/pricemultifull"),
+  historical_minute = paste0(API_BASE_URL, "/data/v2/histominute"),
+  historical_hour = paste0(API_BASE_URL, "/data/v2/histohour"),
+  historical_day = paste0(API_BASE_URL, "/data/v2/histoday")
 )
 
 # API rate limiting (free tier: ~100,000 calls/month, ~3,000 calls/day)

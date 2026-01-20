@@ -192,8 +192,7 @@ monitor_prices <- function(cryptos = CRYPTOCURRENCIES,
     # Save data if requested
     if (save_data) {
       filename <- file.path(
-        dirname(dirname(dirname(getwd()))),
-        "data", "raw",
+        RAW_DATA_DIR,
         paste0("realtime_prices_", format(Sys.time(), "%Y%m%d_%H%M%S"), ".rds")
       )
       saveRDS(price_history, filename)
