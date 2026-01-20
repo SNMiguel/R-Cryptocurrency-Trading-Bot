@@ -33,6 +33,21 @@ API_RETRY <- list(
 )
 
 # ============================================================================
+# PROJECT PATHS
+# ============================================================================
+
+# Get project root directory
+PROJECT_ROOT <- getwd()
+
+# Define directory paths
+CONFIG_DIR <- file.path(PROJECT_ROOT, "config")
+DATA_DIR <- file.path(PROJECT_ROOT, "data")
+RAW_DATA_DIR <- file.path(DATA_DIR, "raw")
+PROCESSED_DATA_DIR <- file.path(DATA_DIR, "processed")
+SRC_DIR <- file.path(PROJECT_ROOT, "src")
+LOGS_DIR <- file.path(PROJECT_ROOT, "logs")
+
+# ============================================================================
 # TRADING CONFIGURATION
 # ============================================================================
 
