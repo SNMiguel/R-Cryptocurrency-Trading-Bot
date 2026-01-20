@@ -8,7 +8,7 @@ library(jsonlite)
 library(logger)
 
 # Source configuration
-source(file.path(dirname(dirname(dirname(getwd()))), "config", "config.R"))
+# source(file.path(dirname(dirname(dirname(getwd()))), "config", "config.R"))
 
 # ============================================================================
 # API CLIENT FUNCTIONS

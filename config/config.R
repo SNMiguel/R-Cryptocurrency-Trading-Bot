@@ -8,7 +8,7 @@
 # ============================================================================
 
 # CryptoCompare API endpoints
-API_BASE_URL <- "https://min-api.cryptocompare.com/data"
+API_BASE_URL <- "https://min-api.cryptocompare.com"
 
 API_ENDPOINTS <- list(
   price = paste0(API_BASE_URL, "/price"),

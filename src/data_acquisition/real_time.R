@@ -7,8 +7,8 @@ library(tidyverse)
 library(logger)
 
 # Source dependencies
-source(file.path(dirname(dirname(dirname(getwd()))), "config", "config.R"))
-source(file.path(dirname(getwd()), "api_client.R"))
+# source(file.path(dirname(dirname(dirname(getwd()))), "config", "config.R"))
+# source(file.path(dirname(getwd()), "api_client.R"))
 
 # ============================================================================
 # REAL-TIME PRICE FUNCTIONS
