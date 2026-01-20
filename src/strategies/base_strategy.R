@@ -205,6 +205,7 @@ calculate_performance <- function(trades, initial_capital) {
       total_return = 0,
       total_return_pct = 0,
       num_trades = 0,
+      num_completed_trades = 0,
       win_rate = 0,
       profit_factor = 0
     ))

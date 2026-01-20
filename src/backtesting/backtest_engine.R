@@ -263,18 +263,24 @@ compare_strategies <- function(strategies, data, initial_capital = 10000) {
     
     results <- run_backtest(strategy, data, initial_capital)
     
+    # Handle missing metrics safely
+    sharpe <- ifelse(is.null(results$metrics$sharpe_ratio), 0, results$metrics$sharpe_ratio)
+    drawdown <- ifelse(is.null(results$metrics$max_drawdown), 0, results$metrics$max_drawdown)
+    profit_factor <- ifelse(is.null(results$metrics$profit_factor), 0, results$metrics$profit_factor)
+    win_rate <- ifelse(is.null(results$performance$win_rate), 0, results$performance$win_rate)
+    
     comparison <- rbind(comparison, data.frame(
-      strategy_name = strategy$name,
-      total_return = results$performance$total_return,
-      return_pct = results$performance$total_return_pct,
-      sharpe_ratio = results$metrics$sharpe_ratio,
-      max_drawdown = results$metrics$max_drawdown,
-      num_trades = results$performance$num_completed_trades,
-      win_rate = results$performance$win_rate,
-      profit_factor = results$metrics$profit_factor,
-      stringsAsFactors = FALSE
+        strategy_name = strategy$name,
+        total_return = results$performance$total_return,
+        return_pct = results$performance$total_return_pct,
+        sharpe_ratio = sharpe,
+        max_drawdown = drawdown,
+        num_trades = results$performance$num_completed_trades,
+        win_rate = win_rate,
+        profit_factor = profit_factor,
+        stringsAsFactors = FALSE
     ))
-  }
+    }
   
   # Sort by return
   comparison <- comparison %>% arrange(desc(return_pct))
