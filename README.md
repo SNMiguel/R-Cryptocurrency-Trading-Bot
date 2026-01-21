@@ -81,7 +81,7 @@ crypto-trading-bot/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/R-Cryptocurrency-Trading-Bot.git
+git clone https://github.com/SNMiguel/R-Cryptocurrency-Trading-Bot.git
 cd R-Cryptocurrency-Trading-Bot
 ```
 
@@ -197,13 +197,13 @@ rr_ratio <- calculate_risk_reward_ratio(entry_price, stop_loss, take_profit)
 ## 📊 Example Results
 
 ### Equity Curve
-![Equity Curve](results/plots/equity_curve_demo.png)
+![Preview](https://i.imgur.com/OwoV7rH.png)
 
 ### Drawdown Analysis
-![Drawdown](results/plots/drawdown_demo.png)
+![Preview](https://i.imgur.com/9JE19vo.png)
 
 ### Strategy Comparison
-![Strategy Comparison](results/plots/strategy_comparison_demo.png)
+![Preview](https://i.imgur.com/X5bWoJG.png)
 
 ---
 
@@ -443,9 +443,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Contact
 
 **Chawana Smith**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
-- Email: your.email@example.com
+- GitHub: [@SNMiguel](https://github.com/migztech)
+- LinkedIn: [MigzTech LinkedIn](https://linkedin.com/in/your-profile)
+- Email: shemamiguel2023@gmail.com
 
 ---
 
